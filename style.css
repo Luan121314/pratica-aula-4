@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding:  0 10px;
 }
 #main{
     display: grid;
@@ -8,7 +9,7 @@ body{
                          'aside aside'
                          'section section'
                          'footer footer';
-    grid-auto-rows: 15vw 20vw 70vw 20vw 20vw;
+    grid-auto-rows: 15vw 20vw 50vw 20vw 20vw;
 
 }
 header{
@@ -21,7 +22,7 @@ header{
 
 }
 nav h1{
-    font-size: 12pt;
+    font-size: 13pt;
 }
 nav{
     grid-area: nav;
@@ -37,7 +38,12 @@ aside{
     grid-area: aside;
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
+}
+aside div{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 aside div input{
     width: 80%;
